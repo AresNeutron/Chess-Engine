@@ -1,0 +1,126 @@
+.promotionPiece {
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 64px;
+  height: 64px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.promotionContainer {
+  position: absolute;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #f0f4f8; /* Light background for contrast */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  margin: 0 auto;
+}
+
+.promotionInfo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.promotionPiece img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.promotionContainer > div {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap; /* Allows pieces to wrap on smaller screens */
+}
+
+/* Info Section Styling */
+.info {
+  height: 150px;
+  text-align: center;
+  margin: 20px auto;
+  padding: 12px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  font-family: Arial, sans-serif;
+}
+
+.info div{
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+}
+
+/* Title Styling */
+.info h1 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-top: 1px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Paragraph Styling */
+.info h2 {
+  color:white;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  background-color: #6c2e1f;
+  border-radius: 10px;
+  line-height: 40px;
+  width: 200px;
+  height: 40px;
+}
+
+/* Reset Button Styling */
+.resetButton {
+  padding: 5px 20px;
+  height: 60px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #6c2e1f;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.resetButton:hover {
+  background-color: #5a261a;
+  transform: scale(1.05);
+}
+
+.resetButton:active {
+  background-color: #4d2015;
+  transform: scale(0.95);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .info {
+    padding: 15px;
+  }
+
+  .info h1 {
+    font-size: 1.6rem;
+  }
+
+  .resetButton {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}
