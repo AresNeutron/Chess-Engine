@@ -1,32 +1,35 @@
-import { useEffect } from "react";
-import { io } from "socket.io-client";
-import url from "../endpoints/url";
-
-const socket = io(url, { path: "/ws" });
+import { useEffect, useRef } from "react";
+import url from "../endpoints/url";  // Asegúrate de que esta URL es correcta
 
 const useWebSocket = (onEvent) => {
+  const socketRef = useRef(null);
+
   useEffect(() => {
-    socket.on("promotion_required", (data) => {
-      console.log("Promoción requerida:", data);
-      onEvent("promotion_required", data);
-    });
+    // Crear conexión WebSocket
+    socketRef.current = new WebSocket(`${url.replace("http", "ws")}ws`);
 
-    socket.on("check_alert", (data) => {
-      console.log("¡Jaque!", data);
-      onEvent("check_alert", data);
-    });
+    socketRef.current.onopen = () => {
+      console.log("Conectado al WebSocket");
+    };
 
-    socket.on("checkmate_alert", (data) => {
-      console.log("¡Jaque mate!", data);
-      onEvent("checkmate_alert", data);
-    });
+    socketRef.current.onmessage = (event) => {
+      const { event: eventType, data } = JSON.parse(event.data);
+      console.log(`Evento recibido: ${eventType}`, data);
+      onEvent(eventType, data);
+    };
+
+    socketRef.current.onclose = () => {
+      console.log("Conexión WebSocket cerrada");
+    };
 
     return () => {
-      socket.off("promotion_required");
-      socket.off("check_alert");
-      socket.off("checkmate_alert");
+      if (socketRef.current) {
+        socketRef.current.close();
+      }
     };
   }, [onEvent]);
+
+  return socketRef.current;
 };
 
 export default useWebSocket;

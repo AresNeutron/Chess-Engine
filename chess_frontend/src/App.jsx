@@ -9,16 +9,6 @@ function App() {
   const [checkMessage, setCheckMessage] = useState("");
   const [checkmateMessage, setCheckmateMessage] = useState("");
 
-  useWebSocket((event, data) => {
-    if (event === "promotion_required") {
-      setPromotion(data);
-    } else if (event === "check_alert") {
-      setCheckMessage(data.message);
-    } else if (event === "checkmate_alert") {
-      setCheckmateMessage(data.message);
-    }
-  });
-
   const handleReset = async () => {
     if (window.confirm("Are you sure you want to reset the game?")) {
       resetState()
