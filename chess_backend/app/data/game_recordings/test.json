@@ -4151,6 +4151,198 @@
             },
             "hash": "fbf289d92c45cdbeddd5cff427512eafa5cff9b1bb43f7d42f8bce8eae50a4be",
             "count": 1
+        },
+        {
+            "turn": 347,
+            "player": "white",
+            "moved_piece": "white-pawn-8",
+            "change": 17592991363080,
+            "bitboards": {
+                "white": 536928255,
+                "black": 18446462598732840960
+            },
+            "hash": "fc281dcfda9f2f177026d05aafa472439af34a0af66917a6039e5aa713335dc0",
+            "count": 4
+        },
+        {
+            "turn": 348,
+            "player": "black",
+            "moved_piece": "black-pawn-8",
+            "change": 9007336693694464,
+            "bitboards": {
+                "white": 536928255,
+                "black": 18437455536917053440
+            },
+            "hash": "850baa885a1f5deb5f1480ee935905ba3b588e248b29db4c43c9269cb8e40c44",
+            "count": 4
+        },
+        {
+            "turn": 349,
+            "player": "white",
+            "moved_piece": "white-pawn-7",
+            "change": 268439552,
+            "bitboards": {
+                "white": 805359615,
+                "black": 18437455536917053440
+            },
+            "hash": "c8a86803ac4939af51a3edd7206a9f707a472c7c36436516f4a0c0381795e5fb",
+            "count": 3
+        },
+        {
+            "turn": 350,
+            "player": "black",
+            "moved_piece": "black-pawn-7",
+            "change": 4503668346847232,
+            "bitboards": {
+                "white": 805359615,
+                "black": 18432952006009159680
+            },
+            "hash": "88a2487aef1d9c046fe6ff67a05b68f5afb830053dbb92244a73521d50e6e5a4",
+            "count": 1
+        },
+        {
+            "turn": 351,
+            "player": "white",
+            "moved_piece": "white-queen-1",
+            "change": 549755813896,
+            "bitboards": {
+                "white": 550561173495,
+                "black": 18432952006009159680
+            },
+            "hash": "2136294a62014afe0c63b43a97934e99483835a0ba25d68999bc5aa4f8979381",
+            "count": 1
+        },
+        {
+            "turn": 352,
+            "player": "black",
+            "moved_piece": "black-pawn-9",
+            "change": 18084767253659648,
+            "bitboards": {
+                "white": 550561173495,
+                "black": 18415007976243855360
+            },
+            "hash": "d9896f4d35ace659f1c0f6b6785d9c70d245cd1023d655da34ff240f4acf66e6",
+            "count": 1
+        },
+        {
+            "turn": 353,
+            "player": "white",
+            "moved_piece": "white-pawn-8",
+            "change": 550024253448,
+            "bitboards": {
+                "white": 536928255,
+                "black": 18446462598732840960
+            },
+            "hash": "fc281dcfda9f2f177026d05aafa472439af34a0af66917a6039e5aa713335dc0",
+            "count": 5
+        },
+        {
+            "turn": 354,
+            "player": "black",
+            "moved_piece": "white-pawn-9",
+            "change": 0,
+            "bitboards": {
+                "white": 1073790975,
+                "black": 18446462598732840960
+            },
+            "hash": "4edd63a33c4cab669750c6385d6a969c0d6cd3d77b22b7e62103da999da88b25",
+            "count": 2
+        },
+        {
+            "turn": 355,
+            "player": "white",
+            "moved_piece": "black-pawn-0",
+            "change": 0,
+            "bitboards": {
+                "white": 1073790975,
+                "black": 18410434351469690880
+            },
+            "hash": "20f2dd4e2cfc79d58c5530b12506503873817baa2afb23ca8ccb3f4dbdb01bfb",
+            "count": 1
+        },
+        {
+            "turn": 356,
+            "player": "black",
+            "moved_piece": "white-pawn-9",
+            "change": 549755813888,
+            "bitboards": {
+                "white": 549755863039,
+                "black": 18410433801713876992
+            },
+            "hash": "03b6779e2d3ad2e583502a24ad0ce6b40b420a618e8cbf7a02337a69594ef283",
+            "count": 1
+        },
+        {
+            "turn": 357,
+            "player": "white",
+            "moved_piece": "black-pawn-9",
+            "change": 0,
+            "bitboards": {
+                "white": 549755863039,
+                "black": 18392419678082301952
+            },
+            "hash": "bf39711ea9c3f3ccef6843eefdd835b0eeb0af714378b372ddbf95347fff39ad",
+            "count": 1
+        },
+        {
+            "turn": 358,
+            "player": "black",
+            "moved_piece": "white-pawn-9",
+            "change": 274877906944,
+            "bitboards": {
+                "white": 70368744226815,
+                "black": 18392419403204395008
+            },
+            "hash": "16bccb3464d8ca7e4c176af10ba99f7ba5f59ff54c02d3bf70cb3350d874d9a5",
+            "count": 1
+        },
+        {
+            "turn": 359,
+            "player": "white",
+            "moved_piece": "black-knight-2",
+            "change": 0,
+            "bitboards": {
+                "white": 70368744226815,
+                "black": 13780768569149095936
+            },
+            "hash": "9a40bcf7c3f546583bb656ccd3d870ae062d9f4183a79b0fb7d7d07c6113c98e",
+            "count": 1
+        },
+        {
+            "turn": 360,
+            "player": "black",
+            "moved_piece": "white-pawn-9",
+            "change": 0,
+            "bitboards": {
+                "white": 18014398509531135,
+                "black": 13780768569149095936
+            },
+            "hash": "e69ea3dcd6fa5c8182fc1c26db7bed87026d636c1b404a0520f0702b59c33a1b",
+            "count": 1
+        },
+        {
+            "turn": 361,
+            "player": "white",
+            "moved_piece": "black-rook-2",
+            "change": 0,
+            "bitboards": {
+                "white": 18014398509531135,
+                "black": 4557537269782675456
+            },
+            "hash": "3119fbefd92dcd46eae06a38950fc57a21e110c4d5f4fb28b278cbc8cb8be911",
+            "count": 1
+        },
+        {
+            "turn": 362,
+            "player": "black",
+            "moved_piece": "white-pawn-9",
+            "change": 0,
+            "bitboards": {
+                "white": 4611686018427437055,
+                "black": 4557537269782675456
+            },
+            "hash": "099e8bed4853377330c3e482dbf1ce4c3d657419f40d33cf359f71f61f048be5",
+            "count": 1
         }
     ],
     "position_counts": {
@@ -4167,8 +4359,8 @@
         "82c31ae78bc337ffdaf9421f963466cc4233890eb60aced4e7e17f0e2183fffe": 1,
         "3ae79b0ac01bf11f1e659a53fd658f87fe153807e1f1ff43db3e929f664a1c98": 1,
         "57e06d36b9dee1294729ad1685d08f70de5c7c04ea4d9e4039274f4b764bc838": 2,
-        "fc281dcfda9f2f177026d05aafa472439af34a0af66917a6039e5aa713335dc0": 3,
-        "850baa885a1f5deb5f1480ee935905ba3b588e248b29db4c43c9269cb8e40c44": 3,
+        "fc281dcfda9f2f177026d05aafa472439af34a0af66917a6039e5aa713335dc0": 5,
+        "850baa885a1f5deb5f1480ee935905ba3b588e248b29db4c43c9269cb8e40c44": 4,
         "077d76fce23cd8f882a44dfce6f385a4721fbf69f7077bf8f8f90979b3b4eb17": 1,
         "23e8bde50fa8d811ecfc20d4c900779f1b236651e9f64e03b2f8fbdf67e90694": 1,
         "532416d69653b7c2475320991cff2680c5f8709e145baec29ac01b968b5869aa": 1,
@@ -4295,7 +4487,7 @@
         "8781da813dd80727dccc1439b94b503bc28b774df0c32292e3d78d4815a8edc5": 1,
         "1e8fd4b2300004b90a448bb493aae475f7d80b918a022873c8f6f4cc7bc1a764": 1,
         "a07aee21949f5dbb196159431bf56bb1b1e1380efdba77ec6852dd8eba6ebf67": 1,
-        "c8a86803ac4939af51a3edd7206a9f707a472c7c36436516f4a0c0381795e5fb": 2,
+        "c8a86803ac4939af51a3edd7206a9f707a472c7c36436516f4a0c0381795e5fb": 3,
         "61afe4666127550b6e75a24d523eeb08265750cdd54fb58fca8d391b37668755": 1,
         "db4f5b2fc1899039fa6d585b9fa69cf02666cf4d5ef1606aa5049df192139413": 1,
         "297cbca1b9981823a18791ec6e9b82aec78dd8ba6a04bb629015ef9a6a83242c": 1,
@@ -4310,7 +4502,7 @@
         "79fe38cd99bc886c74c6724aff6595fea46398c564d0a391db906a76aca1a269": 1,
         "8db92d662b50298711e5b893eb6ca5c7ab7c538283b0490cbb9da0b3edc9e1b7": 1,
         "d8097accead41e0f759ecf9315b025d0cb2eb350184c379952cdc8e2a924dbad": 1,
-        "4edd63a33c4cab669750c6385d6a969c0d6cd3d77b22b7e62103da999da88b25": 1,
+        "4edd63a33c4cab669750c6385d6a969c0d6cd3d77b22b7e62103da999da88b25": 2,
         "1a0a58e4ba2f284b14b4378b650c4d6f43d4ee3cb43e73fbab1f6f73ae1b8479": 3,
         "69e2b4e295897ebbc3382649f913c8ea4da80b1e481d7164998a6cbfa3241b18": 3,
         "e2ad21efbe38f8bc21c77f74308d0890c3a248215b63214a8fa0a4c5a1643e80": 2,
@@ -4364,6 +4556,17 @@
         "b40dd19038f27e7f1178dfc0ecc0a44c4aa058b19234f278dc402aad11bc4f17": 1,
         "5f70496751bd1f1fb974ccf8a7f9cc9c0292f2ba867ed6f7198d900d89f4a38a": 1,
         "8b52a268229a6fc1139b20ba75cca14800efd7a5590c97a3ca23aafef95ab2aa": 1,
-        "fbf289d92c45cdbeddd5cff427512eafa5cff9b1bb43f7d42f8bce8eae50a4be": 1
+        "fbf289d92c45cdbeddd5cff427512eafa5cff9b1bb43f7d42f8bce8eae50a4be": 1,
+        "88a2487aef1d9c046fe6ff67a05b68f5afb830053dbb92244a73521d50e6e5a4": 1,
+        "2136294a62014afe0c63b43a97934e99483835a0ba25d68999bc5aa4f8979381": 1,
+        "d9896f4d35ace659f1c0f6b6785d9c70d245cd1023d655da34ff240f4acf66e6": 1,
+        "20f2dd4e2cfc79d58c5530b12506503873817baa2afb23ca8ccb3f4dbdb01bfb": 1,
+        "03b6779e2d3ad2e583502a24ad0ce6b40b420a618e8cbf7a02337a69594ef283": 1,
+        "bf39711ea9c3f3ccef6843eefdd835b0eeb0af714378b372ddbf95347fff39ad": 1,
+        "16bccb3464d8ca7e4c176af10ba99f7ba5f59ff54c02d3bf70cb3350d874d9a5": 1,
+        "9a40bcf7c3f546583bb656ccd3d870ae062d9f4183a79b0fb7d7d07c6113c98e": 1,
+        "e69ea3dcd6fa5c8182fc1c26db7bed87026d636c1b404a0520f0702b59c33a1b": 1,
+        "3119fbefd92dcd46eae06a38950fc57a21e110c4d5f4fb28b278cbc8cb8be911": 1,
+        "099e8bed4853377330c3e482dbf1ce4c3d657419f40d33cf359f71f61f048be5": 1
     }
 }

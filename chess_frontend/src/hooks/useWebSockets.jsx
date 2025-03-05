@@ -25,9 +25,10 @@ const useWebSocket = (onEvent) => {
     return () => {
       if (socketRef.current) {
         socketRef.current.close();
+        socketRef.current = null;
       }
     };
-  }, [onEvent]);
+  }, []);
 
   return socketRef.current;
 };
