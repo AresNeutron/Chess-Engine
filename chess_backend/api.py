@@ -4,7 +4,7 @@ from typing import List
 from chess_backend.app.final_filter import final_filter
 from chess_backend.app.data.positions import load_positions_from_json
 from chess_backend.app.game_state import make_move
-from chess_backend.app.helpers.checkers import is_king_in_check, is_promotion
+from chess_backend.app.helpers.checkers import is_movement_check, is_promotion
 from chess_backend.routes import router  # Importamos el nuevo router
 
 app = FastAPI()
@@ -48,10 +48,11 @@ async def websocket_endpoint(websocket: WebSocket):
 
 async def process_move(data: dict, websocket: WebSocket):
     """Procesar movimientos de piezas recibidos por WebSocket."""
-    piece_name = data.get("piece_name")
+    piece_name: str = data.get("piece_name")
     to_pos = data.get("to_pos")
 
     piece_positions = load_positions_from_json()
+    is_white = piece_name.startswith("white")
     
     if piece_name not in piece_positions:
         await websocket.send_json({"event": "error", "data": {"message": "Pieza no encontrada"}})
@@ -70,8 +71,9 @@ async def process_move(data: dict, websocket: WebSocket):
         await notify_clients("promotion_required", {"pawn": piece_name})
 
     # Verificar jaque
-    if is_king_in_check(f"{piece_name[:5]}-king"):
-        await notify_clients("check_alert", {"message": f"{piece_name[:5]}-king is in check"})
+    enemy_king = f"{"black" if is_white else "white"}-king"
+    if is_movement_check(enemy_king): # This one is the enemy king
+        await notify_clients("check_alert", {"message": f"{enemy_king} is in check"})
     
      # # Verificar jaque mate
     # if check_checkmate():

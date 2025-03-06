@@ -12,7 +12,7 @@ def is_promotion(to_pos: int, pawn_name: str):
     return False  # No necesita promoción
 
 
-def is_king_in_check(king_name: str):
+def is_movement_check(king_name: str):
     piece_positions = load_positions_from_json()
     white_bitboard, black_bitboard = load_boards()
     precomputed_moves = load_moves_from_json()
@@ -23,3 +23,8 @@ def is_king_in_check(king_name: str):
     
     # Check if the king is under attack
     return bool(enemy_attack_map & (1 << king_position))
+
+
+def is_movement_check_mate(king_name: str):
+    if not is_movement_check(king_name): # Early exit if king is not in check 
+        return False

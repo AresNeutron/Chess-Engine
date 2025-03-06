@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import url from "../endpoints/url";  // Asegúrate de que esta URL es correcta
 
 const useWebSocket = (onEvent) => {
-  const socketRef = useRef(null);
+  const socketRef = useRef(null);  // This is creating a variable to store the web socket after re-renders
 
   useEffect(() => {
     // Crear conexión WebSocket
